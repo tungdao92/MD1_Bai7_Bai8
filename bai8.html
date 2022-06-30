@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sotuoi = +prompt('Nhập số tuổi', '')
+    if (Number.isInteger(sotuoi)) {
+        if (sotuoi > 0) {
+            if (sotuoi < 120) {
+                alert('Đây là tuổi 1 người')
+            } else {
+                alert('Yêu quái, ko phải')
+            }
+        } else {
+            alert('Không có tuổi âm, ko phải')
+        }
+    } else {
+        alert('Không phải')
+    }
+
+</script>
+
+</body>
+</html>

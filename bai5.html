@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính diện tích tam giác vuông</h1>
+<table border="1">
+    <tr>
+        <td><h4>Cạnh a:</h4></td>
+        <td><input type="number" id="canha"></td>
+    </tr>
+    <tr>
+        <td><h4>Cạnh b:</h4></td>
+        <td><input type="number" id="canhb"></td>
+    </tr>
+    <tr>
+        <td><button onclick="tinhDienTich()">Kết quả</button></td>
+        <td>Diện Tích: <span id="ketqua"></span> m <sup>2</sup></td>
+    </tr>
+</table>
+<script>
+    function tinhDienTich() {
+        let nhapcanha=document.getElementById('canha').value;
+        let nhapcanhb=document.getElementById('canhb').value;
+        let dientich=nhapcanha*nhapcanhb/2;
+        document.getElementById('ketqua').innerHTML=dientich
+    }
+</script>
+
+
+
+</body>
+</html>

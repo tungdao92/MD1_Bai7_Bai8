@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Giải Phương Trình Bậc 1 ax+b=0</h1>
+<h3>Nhập a: <input type="number" id="nhapa"> </h3>
+<h3>Nhập b: <input type="number" id="nhapb"> </h3>
+<button onclick="phuongTrinhBac2()"> Giá trị x là</button>
+<h3>X= <span id="hienthi"></span></h3>
+<script>
+    function phuongTrinhBac2() {
+        let a=+document.getElementById('nhapa').value;
+        let b=+document.getElementById('nhapb').value;
+        let nghiem=-b/a
+        if (a==0 && b==0){
+            document.getElementById('hienthi').innerHTML='Vố Số Nghiệm X'
+        }if (a==0 && b!==0){
+            document.getElementById('hienthi').innerHTML='X Vô Nghiệm'
+        }if (a!==0){
+            document.getElementById('hienthi').innerHTML=nghiem.toFixed(2)
+        }
+    }
+</script>
+
+</body>
+</html>

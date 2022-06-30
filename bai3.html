@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính diện tích hình vuông</h1>
+<h4>Nhập độ dài cạnh a (cm)</h4>
+<input type="number" id="nhap"> <br><br>
+<button onclick="tinhDienTich()">Kết quả</button>
+<h3>Diện tích hình vuông: <span id="dientich"></span>Cm<sup>2</sup></h3>
+<script>
+    function tinhDienTich() {
+        let nhapa=+document.getElementById('nhap').value;
+        let dientich=nhapa*nhapa
+        document.getElementById('dientich').innerHTML=dientich
+    }
+
+</script>
+</body>
+</html>

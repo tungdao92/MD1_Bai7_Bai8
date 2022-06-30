@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính Thuế Thu Nhập Cá Nhân</h1>
+<input type="number" id="nhap"> (Đơn vị: Triệu đồng)
+<button onclick="tinhThue()">Xem thuế</button>
+<h1>Số tiền thuế phải nộp: <span id="hienthi"></span></h1>
+<script>
+    function tinhThue() {
+        let sotien=+document.getElementById('nhap').value;
+        if (sotien>=0){
+            if (sotien<=5){
+                document.getElementById('hienthi').innerHTML= sotien*0.05
+            }if (sotien<=10){
+                document.getElementById('hienthi').innerHTML=sotien*0.1-0.25
+            }if (sotien<=18){
+                document.getElementById('hienthi').innerHTML=sotien*0.15-0.75
+            } if (sotien<=32){
+                document.getElementById('hienthi').innerHTML=sotien*0.2-1.65
+            }if (sotien<=52){
+                document.getElementById('hienthi').innerHTML=sotien*0.25-3.25
+            }if (sotien<=80){
+                document.getElementById('hienthi').innerHTML=sotien*0.3-5.85
+            }else {
+                document.getElementById('hienthi').innerHTML=sotien*0.35-9.85
+            }
+        }else {
+            document.getElementById('hienthi').innerHTML='Ko thu nhập'
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
